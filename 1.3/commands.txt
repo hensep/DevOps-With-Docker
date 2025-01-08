@@ -1,0 +1,2 @@
+docker run -d devopsdockeruh/simple-web-service:ubuntu
+docker exec tail -f ./text.log quirky_pasteur
