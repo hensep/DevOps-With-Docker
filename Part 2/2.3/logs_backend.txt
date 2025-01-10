@@ -1,0 +1,15 @@
+2025-01-10 17:16:49 [Ex 2.4+] REDIS_HOST env was not passed so redis connection is not initialized
+2025-01-10 17:16:49 [Ex 2.6+] POSTGRES_HOST env was not passed so postgres connection is not initialized
+2025-01-10 17:16:49 [GIN-debug] [WARNING] Creating an Engine instance with the Logger and Recovery middleware already attached.
+2025-01-10 17:16:49 
+2025-01-10 17:16:49 [GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+2025-01-10 17:16:49  - using env:       export GIN_MODE=release
+2025-01-10 17:16:49  - using code:      gin.SetMode(gin.ReleaseMode)
+2025-01-10 17:16:49 
+2025-01-10 17:16:49 [GIN-debug] GET    /ping                     --> server/router.pingpong (4 handlers)
+2025-01-10 17:16:49 [GIN-debug] GET    /messages                 --> server/controller.GetMessages (4 handlers)
+2025-01-10 17:16:49 [GIN-debug] POST   /messages                 --> server/controller.CreateMessage (4 handlers)
+2025-01-10 17:16:49 [GIN-debug] Listening and serving HTTP on :8080
+2025-01-10 17:17:20 [GIN] 2025/01/10 - 15:17:20 | 200 |     398.669µs |      172.21.0.1 | GET      "/ping"
+2025-01-10 17:17:20 [GIN] 2025/01/10 - 15:17:20 | 404 |       8.085µs |      172.21.0.1 | GET      "/favicon.ico"
+2025-01-10 17:17:29 [GIN] 2025/01/10 - 15:17:29 | 200 |       9.158µs |      172.21.0.1 | GET      "/ping"
