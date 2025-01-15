@@ -27,4 +27,7 @@ docker/login-action
 docker/build-push-action
 and use the most recent versions in your workflow.
 
-Keep an eye on the GitHub Actions page to see that your workflow is working:
+Keep an eye on the GitHub Actions page to see that your workflow is working
+
+## Solution
+Directory for the exercise can be found at https://github.com/hensep/devops-with-docker-express-app
