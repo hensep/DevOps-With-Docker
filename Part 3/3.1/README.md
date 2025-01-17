@@ -27,7 +27,27 @@ docker/login-action
 docker/build-push-action
 and use the most recent versions in your workflow.
 
-Keep an eye on the GitHub Actions page to see that your workflow is working
+Keep an eye on the GitHub Actions page to see that your workflow is working.
+
+Ensure also from Docker Hub that your image gets pushed there.
+
+Next, run your image locally in detached mode, and ensure that you can access it with the browser.
+
+Now set up and run the Watchtower just as described above.
+
+You might do these two in a single step in a shared Docker Compose file.
+
+Now your deployment pipeline is set up! Ensure that it works:
+
+make a change to your code
+
+commit and push the changes to GitHub
+
+wait for some time (the time it takes for GitHub Action to build and push the image plus the Watchtower poll interval)
+
+reload the browser to ensure that Watchtower has started the new version (that is, your changes are visible)
+
+Submit a link to the repository with the config.
 
 ## Solution
 Repository for the exercise can be found at https://github.com/hensep/devops-with-docker-express-app
