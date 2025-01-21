@@ -8,4 +8,5 @@ I optimized my own Hello World project written in go by changing to golang:1.23-
 
 ## Image sizes before and after
 hello-world-go                               latest            5d7929af9941   11 minutes ago   1.27GB
+
 hello-world-go-optimized                     latest            2593a1442b10   5 minutes ago    3.44MB
